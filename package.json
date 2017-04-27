@@ -1,0 +1,16 @@
+{
+  "name": "slack_botkit",
+  "version": "1.0.0",
+  "description": "slack bot with jboss MW",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "anurag saran",
+  "license": "ISC",
+  "dependencies": {
+    "botkit": "^0.5.2",
+    "infinispan": "^0.4.0"
+  }
+}
