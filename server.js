@@ -1,5 +1,5 @@
 var infinispan = require('infinispan');
-var _ = require('underscore');
+//var _ = require('underscore');
 var Botkit = require('./node_modules/botkit/lib/Botkit.js');
 
 var jdgHost = process.env.DATAGRID_HOTROD_SERVICE_HOST || "127.0.0.1";
