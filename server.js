@@ -32,6 +32,7 @@ var bot = controller.spawn({
 }).startRTM();
 
 controller.hears(['why did the chicken cross the road'], 'direct_message,direct_mention,mention', function(bot, message) {
+    console.log("Message:"+"why did the chicken cross the road");
     var cacheResponse;
     var connected = infinispan.client({port: jdgPort, host: jdgHost}, {version: '2.2'});
      connected.then(function (client) {
@@ -48,6 +49,7 @@ controller.hears(['why did the chicken cross the road'], 'direct_message,direct_
 });
 
 controller.hears(['help'], 'direct_message,direct_mention,mention', (bot, message) => {
+    console.log("Message:"+"Help");
     bot.reply(message, {
         text: `You can ask me things like:
     "What is my employee No"
